@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<style>
+
+    .just-text{
+        padding: 50px 100px 0px 100px;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content:center;
+        padding: 50px 100px;
+        grid-gap: 10px;
+    }
+
+    .container .items{
+        color: var(--white);
+        background-color: var(--black-2);
+        border-radius: 4px;
+        width: 300px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        box-shadow: var(--shadow);
+        cursor: pointer;
+    }
+
+    @media(max-width: 900px){
+        .container{
+            padding: 50px 20px;
+        }
+
+        .container .items{
+            width: 150px;
+            font-size: 0.8rem;
+        }
+    }
+
+</style>
+<body>
+
+    <header>
+        <h3>WELL SERVICES</h3>
+    </header>
+    <div class="container">
+        <!-- items start-->
+        <div id="adhar" class="items" onclick="aadhaar()">AADHAAR-CARD</div>
+        <div id="pan" class="items" onclick="pan()">PAN-CARD</div>
+        <div id="voting" class="items" onclick="voting()">VOTING-CARD</div>
+        <div class="items">DOMICILE</div>
+        <div class="items">INCOM-CERTIFICATE</div>
+        <div class="items">GAZETTE</div>
+        <div class="items">UDYUM</div>
+        <div class="items">GUMASTA</div>
+        <!-- items end-->
+    </div>
+    <script src="../js/code.js"></script>
+
+</body>
+</html>

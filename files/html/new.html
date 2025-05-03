@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <style>
+
+        nav{
+            left: 0px;
+            top: 0px;
+            transition: all 0.5s;
+        }
+
+        .nav-toggle{
+            left: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header class="container-fluid border ">
+        <div class="container d-flex justify-content-between">
+            <h3 class="border mb-0 fs-2 py-2">
+                WELL SERVICES
+            </h3>
+            <div id="menu-icon" class="border d-flex justify-content-between align-items-center mb-0">
+                <p>menu</p>
+            </div>
+        </div>
+    </header>
+    <nav class="position-absolute border">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <script src="../jqurey/jquery-3.7.1.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $("#menu-icon").click(function(){
+                $("nav").toggleClass("nav-toggle")
+            });
+        });
+
+    </script>
+</body>
+</html>

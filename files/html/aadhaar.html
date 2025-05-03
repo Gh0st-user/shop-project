@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/aadhaar.css">
+</head>
+
+<body>
+
+    <header>
+        <h3>WELL SERVICES</h3>
+    </header>
+
+    <!-- Back-btn start -->
+
+    <a id="back" href="../html/index.html">Back</a>
+
+    <!-- Back-btn end -->
+
+    <div class="container">
+        <form action="#">
+            <!-- Country -->
+            <div class="residence item">
+                <p class="question">Select country :</p>
+                <div>
+                    <label for="india">
+                        <input type="radio" name="q" id="india">
+                        <p>India</p>
+                    </label>
+                    <label for="foregion">
+                        <input type="radio" name="q" id="foregion">
+                        <p>Other Country</p>
+                    </label>
+                </div>
+            </div>
+            <!-- Age -->
+            <div class="age item">
+                <p class="question">Select age : </p>
+                <div>
+                    <label><input type="radio" name="18" id="18_plus">&nbsp;&nbsp;18+</label>
+                    <label><input type="radio" name="18" id="5_18">&nbsp;&nbsp;5-18</label>
+                    <label><input type="radio" name="18" id="0_5">&nbsp;&nbsp;0-5</label>
+                </div>
+            </div>
+            <!-- Work -->
+            <div class="correction item">
+                <p class="question">
+                    Select what you want to change
+                </p>
+                <br>
+                <p style="color: red;">
+                    Note :- You can change one thing at a time
+                </p>
+                <br>
+                <div>
+                    <label for="bio"><input id="bio" type="checkbox">&nbsp;&nbsp;Biometric</label>
+                    <br><br>
+                    <label for="name"><input id="name" type="checkbox">&nbsp;&nbsp;Name</label>
+                    <br><br>
+                    <label for="dob"><input id="dob" type="checkbox">&nbsp;&nbsp;D.O.B</label>
+                    <br><br>
+                    <label for="adrs"><input id="adrs" type="checkbox">&nbsp;&nbsp;Address</label>
+                    <br><br>
+                    <label for="co"><input id="co" type="checkbox">&nbsp;&nbsp;Co(Care off)</label>
+                    <br><br>
+                    <label for="mo-no"><input id="mo-no" type="checkbox">&nbsp;&nbsp;Mobile No.</label>
+                    <br><br>
+                    <label for="gender"><input id="gender" type="checkbox">&nbsp;&nbsp;Gender</label>
+                    <br><br>
+                    <label for="mail"><input id="mail" type="checkbox">&nbsp;&nbsp;Mail-ID</label>
+                </div>
+                <div id="submit" class="submit item" onclick="joker()">
+                    <input type="button" value="Submit">
+                </div>
+            </div>
+            <!-- Submit -->
+        </form>
+        
+        <div class="answer">
+            <h3>Documentation</h3>
+            <table border style="width: 100%;">
+                <!-- Heading -->
+                <tr>
+                    <th>Work</th>
+                    <th>Requirements</th>
+                </tr>
+                <!-- Bio -->
+                <!-- 18+ -->
+                <tr id="bio_18" style="display: none;">
+                    <td>BIOMETRIC</td>
+                    <td>
+                        <div>
+                            <ul>
+                                <li style="list-style: none;padding: 10px;background-color: #eeeeee;">Applicante</li>
+                                <li style="list-style: none;padding: 10px;background-color: #cfcece;">Aadhaar-number
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Name -->
+                <!-- 18+ -->
+                <tr id="name_18" style="display: none;">
+                    <td>NAME</td>
+                    <td style="display: flex;align-items: start;justify-content: space-between;">
+                        <div style="width: 50%;padding: 0px 5px 0px 0px;">
+                            <div style="font-weight: 900;background-color: grey;text-align: center;padding: 10px;">Minor
+                                Mistake</div>
+                            <div style="margin: 0px 0px 0px 0px;">
+                                <ul>
+                                    <li style="list-style: none;color: red;padding: 10px;background-color: #eeeeee;">Any
+                                        one is mandetory</li>
+                                    <li style="list-style: none;padding: 10px;background-color: #cfcece;">Pan-card</li>
+                                    <li style="list-style: none;padding: 10px;background-color: #eeeeee;">Voting-crad
+                                    </li>
+                                    <li style="list-style: none;padding: 10px;background-color: #cfcece;">
+                                        Driving-License</li>
+                                    <li style="list-style: none;padding: 10px;background-color: #eeeeee;">Passport</li>
+                                    <li style="list-style: none;padding: 10px;background-color: #cfcece;">Gov. Service
+                                        Identity Card</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div style="width: 50%;padding: 0px 0px 0px 5px;">
+                            <div style="font-weight: 900;background-color: grey;text-align: center;padding: 10px;">Major
+                                Mistake</div>
+                            <div style="padding: 10px 10px;background-color: #cfcece;">
+                                <div>Gazette</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <!-- 5-18 -->
+                <tr id="name_5_18" style="display: none;">
+                    <td>NAME</td>
+                    <td style="display: flex;align-items: start;justify-content: space-between;">
+                        <div>
+                            <ul>
+                                <li style="list-style: none;color: red;padding: 10px;background-color: #eeeeee;">
+                                    Anyone is mandetory
+                                </li>
+                                <li style="list-style: none;padding: 10px;background-color: #cfcece;">Birth-Certificate</li>
+                                <li style="list-style: none;padding: 10px;background-color: #eeeeee;">Gazette</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <!-- D.O.B -->
+                <!-- 18+ -->
+                <tr id="dob_18" style="display: none;">
+                    <td>D.O.B</td>
+                    <td>
+                        <div>
+                            <ul>
+                                <li style="list-style: none;color: red;padding: 10px;background-color: #eeeeee;">Any one
+                                    is mandetory</li>
+                                <li style="list-style: none;padding: 10px;background-color: #cfcece;">BIRTH-CERTIFICATE
+                                </li>
+                                <li style="list-style: none;padding: 10px;background-color: #eeeeee;">
+                                    PASSING-CERTIFICATE</li>
+                                <li style="list-style: none;padding: 10px;background-color: #cfcece;">PASSPORT</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <!-- 5-18 -->
+                <tr id="dob_5_18" style="display: none;">
+                    <td>D.O.B</td>
+                    <td>
+                        <div>
+                            <ul>
+                                <li style="list-style: none;color: red;padding: 10px;background-color: #eeeeee;">Any one
+                                    is mandetory</li>
+                                <li style="list-style: none;padding: 10px;background-color: #cfcece;">BIRTH-CERTIFICATE
+                                </li>
+                                <li style="list-style: none;padding: 10px;background-color: #eeeeee;">
+                                    PASSING-CERTIFICATE</li>
+                                <li style="list-style: none;padding: 10px;background-color: #cfcece;">PASSPORT</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <!-- 0-5 -->
+                <tr id="dob_0_5" style="display: none;">
+                    <td>D.O.B</td>
+                    <td>
+                        <div>
+                            <ul>
+                                <li style="list-style: none;color: red;padding: 10px;background-color: #eeeeee;">Any one is mandetory</li>
+                                <li style="list-style: none;padding: 10px;background-color: #cfcece;">BIRTH-CERTIFICATE</li>
+                                <li style="list-style: none;padding: 10px;background-color: #eeeeee;">PASSPORT</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Address -->
+                <!-- 18+ -->
+                <tr id="adrs_18" style="display: none;">
+                    <td>ADDRESS</td>
+                    <td>
+                        <div style="display: flex;align-items: start;justify-content: space-between;">
+                            <div style="width: 100%;">
+                                <div
+                                    style="text-align: center;font-weight: 900;margin: 0px 5px 0px 0px; padding: 10px;background-color: grey;">
+                                    HOF base</div>
+                                <div style="margin: 0px 5px 0px 0px;">
+                                    <ul>
+                                        <li
+                                            style="list-style: none;color: red;padding: 10px;background-color: #eeeeee;">
+                                            Both are mandetory</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #cfcece;">Head of
+                                            Family Aadhaar</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #eeeeee;">Applicante
+                                            Aadhaar</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="width: 100%;">
+                                <div
+                                    style="text-align: center;font-weight: 900;margin: 0px 0px 0px 5px; padding: 10px;background-color: grey;">
+                                    Non HOF base</div>
+                                <div style="margin: 0px 0px 0px 5px;">
+                                    <ul>
+                                        <li
+                                            style="list-style: none;color: red;padding: 10px;background-color: #eeeeee;">
+                                            Any one is mandetory</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #cfcece;">
+                                            Voting-card</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #eeeeee;">Gov.
+                                            Bank-Passbook</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #cfcece;">Passport
+                                        </li>
+                                        <li style="list-style: none;padding: 10px;background-color: #eeeeee;">Light-Bill
+                                        </li>
+                                        <li style="list-style: none;padding: 10px;background-color: #cfcece;">Registered
+                                            Rent Agrrement</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #eeeeee;">Property
+                                            Tax</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #cfcece;">Standerd
+                                            UID form with MLA or Tahsildar's Stamp and Signature</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <!-- 5-18 -->
+                <tr id="adrs_5_18" style="display: none;">
+                    <td>ADDRESS</td>
+                    <td>
+                        <div style="display: flex;align-items: start;justify-content: space-between;">
+                            <div style="width: 100%;">
+                                <div
+                                    style="text-align: center;font-weight: 900;margin: 0px 5px 0px 0px; padding: 10px;background-color: grey;">
+                                    HOF base</div>
+                                <div style="margin: 0px 5px 0px 0px;">
+                                    <ul>
+                                        <li
+                                            style="list-style: none;color: red;padding: 10px;background-color: #eeeeee;">
+                                            Both are mandetory</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #cfcece;">Head of
+                                            Family Aadhaar</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #eeeeee;">Applicante
+                                            Aadhaar</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="width: 100%;">
+                                <div style="text-align: center;font-weight: 900;margin: 0px 0px 0px 5px; padding: 10px;background-color: grey;">Non HOF base</div>
+                                <div style="margin: 0px 0px 0px 5px;">
+                                    <ul>
+                                        <li style="list-style: none;color: red;padding: 10px;background-color: #eeeeee;">Any one is mandetory</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #eeeeee;">Gov. Bank-Passbook</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #cfcece;">Passport</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #eeeeee;">Standerd UID form with MLA or Tahsildar's Stamp and Signature</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <!-- 0-5 -->
+                <tr id="adrs_0_5" style="display: none;"> 
+                    <td>ADDRESS</td>
+                    <td>
+                        <div style="display: flex;align-items: start;justify-content: space-between;">
+                            <div style="width: 100%;">
+                                <div
+                                    style="text-align: center;font-weight: 900;margin: 0px 5px 0px 0px; padding: 10px;background-color: grey;">
+                                    HOF base</div>
+                                <div style="margin: 0px 5px 0px 0px;">
+                                    <ul>
+                                        <li
+                                            style="list-style: none;color: red;padding: 10px;background-color: #eeeeee;">
+                                            Both are mandetory</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #cfcece;">Head of
+                                            Family Aadhaar</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #eeeeee;">Applicante
+                                            Aadhaar</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="width: 100%;">
+                                <div style="text-align: center;font-weight: 900;margin: 0px 0px 0px 5px; padding: 10px;background-color: grey;">
+                                    Non HOF base</div>
+                                <div style="margin: 0px 0px 0px 5px;">
+                                    <ul>
+                                        <li style="list-style: none;color: red;padding: 10px;background-color: #eeeeee;">Any one is mandetory</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #cfcece;">Passport</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #eeeeee;">Standerd UID form with MLA or Tahsildar's Stamp and Signature</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Care-off -->
+                <!-- 18+ -->
+                <tr id="co_18" style="display: none;">
+                    <td>CARE-OFF</td>
+                    <td>
+                        <div>
+                            <h3 align="center" style="color: red;">Addhaar of Father / Husbend as per case</h3>
+                        </div>
+                        <div style="display: flex;align-items: start;justify-content: space-between;">
+                            <div style="width: 100%;">
+                                <div style="text-align: center;font-weight: 900;margin: 0px 5px 0px 0px; padding: 10px;background-color: grey;">
+                                    HOF base</div>
+                                <div style="margin: 0px 5px 0px 0px;">
+                                    <ul>
+                                        <li
+                                            style="list-style: none;color: red;padding: 10px;background-color: #eeeeee;">
+                                            Both are mandetory</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #cfcece;">Head of
+                                            Family Aadhaar</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #eeeeee;">Applicante
+                                            Aadhaar</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="width: 100%;">
+                                <div
+                                    style="text-align: center;font-weight: 900;margin: 0px 0px 0px 5px; padding: 10px;background-color: grey;">
+                                    Non HOF base</div>
+                                <div style="margin: 0px 0px 0px 5px;">
+                                    <ul>
+                                        <li
+                                            style="list-style: none;color: red;padding: 10px;background-color: #eeeeee;">
+                                            Any one is mandetory</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #cfcece;">
+                                            Voting-card</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #eeeeee;">Gov.
+                                            Bank-Passbook</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #cfcece;">Passport
+                                        </li>
+                                        <li style="list-style: none;padding: 10px;background-color: #eeeeee;">Light-Bill
+                                        </li>
+                                        <li style="list-style: none;padding: 10px;background-color: #cfcece;">Registered
+                                            Rent Agrrement</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #eeeeee;">Property
+                                            Tax</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #cfcece;">Standerd
+                                            UID form with MLA or Tahsildar's Stamp and Signature</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <!-- 5-18 -->
+                <tr id="co_5_18" style="display: none;">
+                    <td>CARE-OFF</td>
+                    <td>
+                        <div>
+                            <h3 align="center" style="color: red;">Addhaar of Father / Husbend as per case</h3>
+                        </div>
+                        <div style="display: flex;align-items: start;justify-content: space-between;">
+                            <div style="width: 100%;">
+                                <div
+                                    style="text-align: center;font-weight: 900;margin: 0px 5px 0px 0px; padding: 10px;background-color: grey;">
+                                    HOF base</div>
+                                <div style="margin: 0px 5px 0px 0px;">
+                                    <ul>
+                                        <li
+                                            style="list-style: none;color: red;padding: 10px;background-color: #eeeeee;">
+                                            Both are mandetory</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #cfcece;">Head of
+                                            Family Aadhaar</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #eeeeee;">Applicante
+                                            Aadhaar</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="width: 100%;">
+                                <div
+                                    style="text-align: center;font-weight: 900;margin: 0px 0px 0px 5px; padding: 10px;background-color: grey;">
+                                    Non HOF base</div>
+                                <div style="margin: 0px 0px 0px 5px;">
+                                    <ul>
+                                        <li style="list-style: none;color: red;padding: 10px;background-color: #eeeeee;">Any one is mandetory</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #cfcece;">Gov. Bank-Passbook</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #eeeeee;">Passport</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #cfcece;">Standerd UID form with MLA or Tahsildar's Stamp and Signature</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <!-- 0-5 -->
+                <tr id="co_0_5" style="display: none;">
+                    <td>CARE-OFF</td>
+                    <td>
+                        <div>
+                            <h3 align="center" style="color: red;">Addhaar of Father / Husbend as per case</h3>
+                        </div>
+                        <div style="display: flex;align-items: start;justify-content: space-between;">
+                            <div style="width: 100%;">
+                                <div
+                                    style="text-align: center;font-weight: 900;margin: 0px 5px 0px 0px; padding: 10px;background-color: grey;">
+                                    HOF base</div>
+                                <div style="margin: 0px 5px 0px 0px;">
+                                    <ul>
+                                        <li
+                                            style="list-style: none;color: red;padding: 10px;background-color: #eeeeee;">
+                                            Both are mandetory</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #cfcece;">Head of
+                                            Family Aadhaar</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #eeeeee;">Applicante
+                                            Aadhaar</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="width: 100%;">
+                                <div
+                                    style="text-align: center;font-weight: 900;margin: 0px 0px 0px 5px; padding: 10px;background-color: grey;">
+                                    Non HOF base</div>
+                                <div style="margin: 0px 0px 0px 5px;">
+                                    <ul>
+                                        <li style="list-style: none;color: red;padding: 10px;background-color: #eeeeee;">Any one is mandetory</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #cfcece;">Passport</li>
+                                        <li style="list-style: none;padding: 10px;background-color: #eeeeee;">Standerd UID form with MLA or Tahsildar's Stamp and Signature</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Mobile no -->
+                <tr id="mo" style="display: none;">
+                    <td>Mobile no.</td>
+                    <td>
+                        <div>
+                            <ul>
+                                <li style="list-style: none;color: red;padding: 10px;background-color: #eeeeee;">Both
+                                    are mandetory</li>
+                                <li style="list-style: none;padding: 10px;background-color: #cfcece;">Applicante</li>
+                                <li style="list-style: none;padding: 10px;background-color: #eeeeee;">Aadhaar-Number</li>
+                                <li style="list-style: none;padding: 10px;background-color: #eeeeee;">Mobile no.</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Gender -->
+                <tr id="gen" style="display: none;">
+                    <td>GENDER</td>
+                    <td>
+                        <div>
+                            <ul>
+                                <li style="list-style: none;color: red;padding: 10px;background-color: #eeeeee;">Both
+                                    are mandetory</li>
+                                <li style="list-style: none;padding: 10px;background-color: #cfcece;">Applicante</li>
+                                <li style="list-style: none;padding: 10px;background-color: #eeeeee;">Aadhaar-Number
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <!-- Mail-ID -->
+                <tr id="mail_18" style="display: none;">
+                    <td>MAIL-ID</td>
+                    <td>
+                        <div>
+                            <ul>
+                                <li style="list-style: none;color: red;padding: 10px;background-color: #eeeeee;">Both
+                                    are mandetory</li>
+                                <li style="list-style: none;padding: 10px;background-color: #cfcece;">Applicante</li>
+                                <li style="list-style: none;padding: 10px;background-color: #eeeeee;">Aadhaar-Number
+                                </li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+
+    <script src="../js/aadhaar.js"></script>
+</body>
+
+</html>

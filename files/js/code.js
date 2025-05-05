@@ -21,4 +21,11 @@ function voting(){
     })
 }
 
+function gazette(){
+    window.addEventListener("click", function(){
+        var gazette = document.getElementById("gazette")
+        window.location = "../html/gazette.html"
+    })
+}
+
 // REDIRECT END

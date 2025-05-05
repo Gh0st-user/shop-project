@@ -1,1 +1,1 @@
-changed voting page (responsive)
+changed email

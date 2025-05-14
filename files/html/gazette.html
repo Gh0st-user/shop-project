@@ -11,7 +11,7 @@
 <style>
 /* BACK BUTTON START */
 
-#back{
+/* #back{
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
@@ -20,13 +20,19 @@
     font-weight: 900;
     color: var(--white);
     box-shadow: var(--shadow);
-}
+} */
 
 /* BACK BUTTON END */
 /* ========================== */
 /* CONTAINER START */
 
+.container .form {
+    border: 2px solid red;
+}
 
+.container .answer{
+    border: 2px solid blue;
+}
 
 /* CONTAINER END */
 /* ========================== */
@@ -46,32 +52,43 @@
     <!-- HEADER END -->
     <!-- BACK BUTTON START -->
 
-    <a id="back" href="../html/index.html">Back</a>
+    <div class="container p-0">
+        <a id="back" class="text-decoration-none shadow d-inline-block m-0 px-4 py-3" href="../html/index.html">Back</a>
+    </div>
 
     <!-- BACK BUTTON END -->
     <!-- CONTAINER START -->
     
     <div class="container border shadow my-4">
-        <div class="row">
+        <div class="row justify-content-between">
             <!-- Form Start -->
-            <div class="form col-md-6">
-                <form action="">
-                    <div style="display: flex;align-items: center;justify-content: space-between;border: 2px solid red;" >
-                        <p style="border: 2px solid red;">
+            <div class="form col-md-4">
+                <form action="" class="row">
+                    <div class="col-12 py-2 d-flex justify-content-between align-items-center border">
+                        <p class="m-0">
                             Select State
                         </p>
                         <select name="" id="" class="py-2 px-1">
-                        <option value="">--Select State</option>
-                        <option value="">Maharashtra</option>
-                        <option value="">Other</option>
-                    </select>
+                            <option value="">--Select State</option>
+                            <option value="">Maharashtra</option>
+                            <option value="">Other</option>
+                        </select>
                     </div>
-                    
+                    <div class="col-12 py-2 border">
+                        <p>
+                            Select age :
+                        </p>
+                        <div>
+                            <label class="border px-2" for="minor"><input type="radio" id="minor" name="age">Minor</label>
+                            <label class="border px-2" for="major"><input type="radio" id="major" name="age">Adult</label>
+                            <label class="border px-2" for="after-marriage"><input type="radio" id="after-marriage" name="age">After Marriage</label>
+                        </div>
+                    </div>
                 </form>
             </div>
             <!-- Form End -->
             <!-- Answer Start -->
-            <div class="answer col-md-6">
+            <div class="answer col-md-7">
                 sds
             </div>
             <!-- Answer Start -->

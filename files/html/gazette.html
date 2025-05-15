@@ -26,13 +26,13 @@
 /* ========================== */
 /* CONTAINER START */
 
-.container .form {
+/* .container .form {
     border: 2px solid red;
 }
 
 .container .answer{
     border: 2px solid blue;
-}
+} */
 
 /* CONTAINER END */
 /* ========================== */
@@ -52,14 +52,14 @@
     <!-- HEADER END -->
     <!-- BACK BUTTON START -->
 
-    <div class="container p-0">
-        <a id="back" class="text-decoration-none shadow d-inline-block m-0 px-4 py-3" href="../html/index.html">Back</a>
+    <div class="container p-0 mt-3">
+        <a id="back" class="text-decoration-none border d-inline-block m-0 px-3 py-2 rounded" href="../html/index.html">Back</a>
     </div>
 
     <!-- BACK BUTTON END -->
     <!-- CONTAINER START -->
     
-    <div class="container border shadow my-4">
+    <div class="container border my-4">
         <div class="row justify-content-between">
             <!-- Form Start -->
             <div class="form col-md-4">
@@ -68,10 +68,10 @@
                         <p class="m-0">
                             Select State
                         </p>
-                        <select name="" id="" class="py-2 px-1">
-                            <option value="">--Select State</option>
-                            <option value="">Maharashtra</option>
-                            <option value="">Other</option>
+                        <select name="" id="select" class="py-2 px-1">
+                            <option value="0">--Select State</option>
+                            <option value="1">Maharashtra</option>
+                            <option value="2">Other</option>
                         </select>
                     </div>
                     <div class="col-12 py-2 border">
@@ -79,17 +79,32 @@
                             Select age :
                         </p>
                         <div>
-                            <label class="border px-2" for="minor"><input type="radio" id="minor" name="age">Minor</label>
-                            <label class="border px-2" for="major"><input type="radio" id="major" name="age">Adult</label>
-                            <label class="border px-2" for="after-marriage"><input type="radio" id="after-marriage" name="age">After Marriage</label>
+                            <label class="border px-2" for="minor"><input disabled type="radio" id="minor" name="age">Minor</label>
+                            <label class="border px-2" for="major"><input disabled type="radio" id="major" name="age">Adult</label>
+                            <label class="border px-2" for="after-marriage"><input disabled type="radio" id="after-marriage" name="age">After Marriage</label>
                         </div>
+                    </div>
+                    <div class="col-12 py-2 border">
+                        <input id="submit-btn" class="btn-basic px-3 py-2 rounded" type="submit" value="Submit">
                     </div>
                 </form>
             </div>
             <!-- Form End -->
             <!-- Answer Start -->
             <div class="answer col-md-7">
-                sds
+                <div class="row">
+                    <div class="col-4 border p-3">Work</div>
+                    <div class="col-8 border p-3">Documentation</div>
+                    <!-- radio -1 -->
+                    <div class="col-4 border p-3">as</div>
+                    <div class="col-8 border p-3">as</div>
+                    <!-- radio -2 -->
+                    <div class="col-4 border p-3">as</div>
+                    <div class="col-8 border p-3">as</div>
+                    <!-- radio -3 -->
+                    <div class="col-4 border p-3">as</div>
+                    <div class="col-8 border p-3">as</div>
+                </div>
             </div>
             <!-- Answer Start -->
         </div>
@@ -98,6 +113,44 @@
 
     <!-- CONTAINER END -->
     <script src="../jqurey/jquery-3.7.1.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            // CONDITION FOR UNLOCK RADIO IPUTS
+            $('#select').on('change', function() {
+                selectedValue = $(this).val();    
+                if(this.value == "1"){
+                    $("#minor").removeAttr("disabled");
+                    $("#major").removeAttr("disabled");
+                    $("#after-marriage").removeAttr("disabled");
+                }
+                else{
+                    $("#minor").attr("disabled", "true");
+                    $("#major").attr("disabled", "true");
+                    $("#after-marriage").attr("disabled", "true");
+                }
+            });
+            // 
+            $("#submit-btn").click(function(){
+                var minor = document.getElementById("minor");
+                var major = document.getElementById("major");
+                var after_marriage = document.getElementById("after-marriage");
+                if(minor.checked == true){
+                    alert("Minor is checked");
+                }
+                else if(major.checked == true){
+                    alert("major is checked");
+                }
+                else if(after_marriage.checked == true){
+                    alert("after-marrige is checked");
+                }
+                else{
+                    alert("not found")
+                }
+            });
+        });
+
+    </script>
 </body>
 
 </html>

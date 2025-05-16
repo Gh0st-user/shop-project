@@ -11,28 +11,22 @@
 <style>
 /* BACK BUTTON START */
 
-/* #back{
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    margin-left: 100px;
-    background-color: var(--black-2);
-    font-weight: 900;
-    color: var(--white);
-    box-shadow: var(--shadow);
-} */
 
 /* BACK BUTTON END */
 /* ========================== */
 /* CONTAINER START */
 
-/* .container .form {
-    border: 2px solid red;
+form,
+#back{
+    background-color: var(--black-2);
+    color: var(--white);
 }
 
-.container .answer{
-    border: 2px solid blue;
-} */
+.ans_1,
+.ans_2,
+.ans_3{
+    display: none;
+}
 
 /* CONTAINER END */
 /* ========================== */
@@ -59,7 +53,7 @@
     <!-- BACK BUTTON END -->
     <!-- CONTAINER START -->
     
-    <div class="container border my-4">
+    <div class="container my-4">
         <div class="row justify-content-between">
             <!-- Form Start -->
             <div class="form col-md-4">
@@ -85,7 +79,7 @@
                         </div>
                     </div>
                     <div class="col-12 py-2 border">
-                        <input id="submit-btn" class="btn-basic px-3 py-2 rounded" type="submit" value="Submit">
+                        <input id="submit-btn" class="btn-basic px-3 py-2 rounded" type="button" value="Submit">
                     </div>
                 </form>
             </div>
@@ -96,14 +90,20 @@
                     <div class="col-4 border p-3">Work</div>
                     <div class="col-8 border p-3">Documentation</div>
                     <!-- radio -1 -->
-                    <div class="col-4 border p-3">as</div>
-                    <div class="col-8 border p-3">as</div>
+                    <div class="ans_1 row p-0 m-0">
+                        <div class="col-4 border p-3">1</div>
+                        <div class="col-8 border p-3">1</div>
+                    </div>
                     <!-- radio -2 -->
-                    <div class="col-4 border p-3">as</div>
-                    <div class="col-8 border p-3">as</div>
+                    <div class="ans_2 row p-0 m-0">
+                        <div class="col-4 border p-3">2</div>
+                        <div class="col-8 border p-3">2</div>
+                    </div>
                     <!-- radio -3 -->
-                    <div class="col-4 border p-3">as</div>
-                    <div class="col-8 border p-3">as</div>
+                    <div class="ans_3 row p-0 m-0">
+                        <div class="col-4 border p-3">3</div>
+                        <div class="col-8 border p-3">3</div>
+                    </div>
                 </div>
             </div>
             <!-- Answer Start -->
@@ -136,13 +136,19 @@
                 var major = document.getElementById("major");
                 var after_marriage = document.getElementById("after-marriage");
                 if(minor.checked == true){
-                    alert("Minor is checked");
+                    $(".ans_1").css("display","flex");
+                    $(".ans_2").css("display","none");
+                    $(".ans_3").css("display","none");
                 }
                 else if(major.checked == true){
-                    alert("major is checked");
+                    $(".ans_2").css("display","flex");
+                    $(".ans_1").css("display","none");
+                    $(".ans_3").css("display","none");
                 }
                 else if(after_marriage.checked == true){
-                    alert("after-marrige is checked");
+                    $(".ans_3").css("display","flex");
+                    $(".ans_1").css("display","none");
+                    $(".ans_2").css("display","none");
                 }
                 else{
                     alert("not found")

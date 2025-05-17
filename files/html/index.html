@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../bootstrap/css/bootstrap.css"> -->
 </head>
 <style>
 
@@ -36,26 +37,34 @@
     }
 
     .slider{
-        /* border: 2px solid red; */
         background-color: #212121;
         height: 100vh;
         width: 280px;
         border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-        position: absolute;
+        border-bottom-right-radius: 10px;
+        position: fixed;
         top: 0px;
-        left: 0px;
+        left: -280px;
         z-index: 100;
     }
 
-    .slider ul li{
 
+    .slider ul li{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        /* border: 2px solid blue; */
+        padding: 0px 10px 0px 20px;
+        &:hover{
+            background-color: var(--black-2);
+        }
     }
 
     .slider ul li a{
         display: block;
-        border: 2px solid yellow;
+        /* border: 2px solid yellow; */
         padding: 10px 15px;
+        color: #fff;
     }
 
     @media(max-width: 900px){
@@ -73,25 +82,28 @@
 <body>
 
 
-    <section class="slider">
+    <section id="slider" class="slider">
         <ul>
-            <li>
-                <a href="#">Home</a>
+            <li class="d-flex">
+                <h3 style="color: white;padding: 20px 0px;">Well Service</h3>
             </li>
-            <li>
-                <a href="#">About</a>
+            <li class="d-flex">
+                <img width="25px" src="../../img/home.png" alt=""><a href="#">Home</a>
             </li>
-            <li>
+            <li class="d-flex">
+                <img width="25px" src="../../img/profile-user.png" alt=""><a href="#">About</a>
+            </li>
+            <li class="d-flex"><img width="25px" src="../../img/customer-service.png" alt="">
                 <a href="#">Services</a>
             </li>
-            <li>
-                <a href="#">Contact</a>
+            <li class="d-flex">
+                <img width="25px" src="../../img/call.png" alt=""><a href="#">Contact</a>
             </li>
         </ul>
     </section>
     <header>
         <h3>WELL SERVICES</h3>
-        <img src="#" alt="Menu Icon">
+        <img id="menu-icon" src="../../img/menu.png" width="25px" alt="Menu Icon">
     </header>
     <div class="container">
         <!-- items start-->

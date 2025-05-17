@@ -35,6 +35,29 @@
         cursor: pointer;
     }
 
+    .slider{
+        /* border: 2px solid red; */
+        background-color: #212121;
+        height: 100vh;
+        width: 280px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 100;
+    }
+
+    .slider ul li{
+
+    }
+
+    .slider ul li a{
+        display: block;
+        border: 2px solid yellow;
+        padding: 10px 15px;
+    }
+
     @media(max-width: 900px){
         .container{
             padding: 50px 20px;
@@ -49,8 +72,26 @@
 </style>
 <body>
 
+
+    <section class="slider">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </section>
     <header>
         <h3>WELL SERVICES</h3>
+        <img src="#" alt="Menu Icon">
     </header>
     <div class="container">
         <!-- items start-->

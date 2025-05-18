@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
 </head>
 <style>
 /* BACK BUTTON START */
@@ -19,6 +20,7 @@
     font-weight: 900;
     color: var(--white);
     box-shadow: var(--shadow);
+    text-decoration: none;
 }
 
 /* BACK BUTTON END */
@@ -136,12 +138,71 @@
 </style>
 <body>
     <!-- HEADER START -->
-
-    <header>
-        <h3>WELL SERVICES</h3>
+    <header id="header" class="container-fluid">
+        <div class="container py-2 d-flex align-items-center justify-content-between">
+            <h3 class="m-0">
+                Well Service
+            </h3>
+            <div class="wrapp">
+                <img id="menu_icon" src="../../img/menu.png" style="transform: scale(1);transition: all 0.5s;" width="25px" alt="op">
+                <img id="menu_icon_2" src="../../img/cross.png" style="transform: scale(0);transition: all 0.5s;" width="20px" alt="op">
+            </div>
+        </div>
     </header>
-
     <!-- HEADER END -->
+    <!-- SIDE NAV-BAR START -->
+
+    <section class="side_bar py-3">
+        <div class="row">
+            <!-- Home -->
+            <div class="col-12">
+                <a href="#" class="menu_link py-2 px-3 d-block text-decoration-none">
+                    <img src="../../img/home.png" width="25px" alt="Home_icon"><span class="ms-3">Home</span>
+                </a>
+            </div>
+            <!-- About -->
+            <div class="col-12">
+                <a href="#" class="menu_link py-2 px-3 d-block text-decoration-none">
+                    <img src="../../img/profile-user.png" width="25px" alt="About_icon"><span class="ms-3">About</span>
+                </a>
+            </div>
+            <!-- Services -->
+            <div class="col-12">
+                <div id="service_icon" class="menu_link py-2 px-3 d-block text-decoration-none">
+                    <img src="../../img/customer-service.png" width="25px" alt="Services_icon"><span class="ms-3">Services</span>
+                </div>
+                <!-- Drop-down-menu -->
+                <div class="drop_down row d-none">
+                    <!-- 1 -->
+                    <div class="col-12">
+                        <a href="#" class="menu_link py-2 ps-5 d-block text-decoration-none">
+                            <img src="../../img/search.png" width="25px" alt="search_icon"><span class="ms-3">Documentation</span>
+                        </a>
+                    </div>
+                    <!-- 2 -->
+                    <div class="col-12">
+                        <a href="#" class="menu_link py-2 ps-5 d-block text-decoration-none">
+                            <img src="../../img/search.png" width="25px" alt="search_icon"><span class="ms-3">Apply from US</span>
+                        </a>
+                    </div>
+                    <!-- 3 -->
+                    <div class="col-12">
+                        <a href="#" class="menu_link py-2 ps-5 d-block text-decoration-none">
+                            <img src="../../img/search.png" width="25px" alt="search_icon"><span class="ms-3">Self Apply</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact -->
+            <div class="col-12">
+                <a href="#" class="menu_link py-2 px-3 d-block text-decoration-none">
+                    <img src="../../img/call.png" width="25px" alt="Contact_icon"><span class="ms-3">Contact</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIDE NAV-BAR END -->
     <!-- BACK-BTN-START -->
 
     <a id="back" href="../html/index.html">Back</a>
@@ -158,49 +219,49 @@
                 <span style="display: flex;margin-top: 10px;">
                     <input id="new_apply" type="checkbox" style="margin-right: 10px;">
                     <label for="new_apply">
-                        <p>New Apply</p>
+                        <p class="m-0 p-0">New Apply</p>
                     </label>
                 </span>
                 <!--  -->
                 <span style="display: flex;margin-top: 10px;">
                     <input id="name_correction" type="checkbox" style="margin-right: 10px;">
                     <label for="name_correction">
-                        <p>Name Correction</p>
+                        <p class="m-0 p-0">Name Correction</p>
                     </label>
                 </span>
                 <!--  -->
                 <span style="display: flex;margin-top: 10px;">
                     <input id="dob" type="checkbox" style="margin-right: 10px;">
                     <label for="dob">
-                        <p>DOB</p>
+                        <p class="m-0 p-0">DOB</p>
                     </label>
                 </span>
                 <!--  -->
                 <span style="display: flex;margin-top: 10px;">
                     <input id="family_details" type="checkbox" style="margin-right: 10px;">
                     <label for="family_details">
-                        <p>Family Details</p>
+                        <p class="m-0 p-0">Family Details</p>
                     </label>
                 </span>
                 <!--  -->
                 <span style="display: flex;margin-top: 10px;">
                     <input id="address" type="checkbox" style="margin-right: 10px;">
                     <label for="address">
-                        <p>Address</p>
+                        <p class="m-0 p-0">Address</p>
                     </label>
                 </span>
                 <!--  -->
                 <span style="display: flex;margin-top: 10px;">
                     <input id="mobile_no" type="checkbox" style="margin-right: 10px;">
                     <label for="mobile_no">
-                        <p>Mobile</p>
+                        <p class="m-0 p-0">Mobile</p>
                     </label>
                 </span>
                 <!--  -->
                 <span style="display: flex;margin-top: 10px;">
                     <input id="state" type="checkbox" style="margin-right: 10px;">
                     <label for="state">
-                        <p>State Change</p>
+                        <p class="m-0 p-0">State Change</p>
                     </label>
                 </span>
                 <!--  -->
@@ -263,6 +324,7 @@
     <!-- Container End-->
 
     <script src="../jqurey/jquery-3.7.1.js"></script>
+    <script src="../js/code.js"></script>
     <script>
         $(document).ready(function(){
             var new_aply = document.getElementById("new_apply");

@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/pan-card.css">
 </head>
 <style>
-    /* BACK BUTTON START */
+/* BACK BUTTON START */
 
 #back{
     display: inline-block;
@@ -20,13 +20,14 @@
     font-weight: 900;
     color: var(--white);
     box-shadow: var(--shadow);
+    text-decoration: none;
 }
 
 /* BACK BUTTON END */
 /* CONTAINER START */
 /* ========================== */
 
-.container{
+.container_2{
     margin-top: 20px;
     padding: 0px 100px;
     display: flex;
@@ -58,39 +59,39 @@
 /* FORM END */
 /* DOCUMENTATION START */
 
-.container .answer{
+.container_2 .answer{
     width: 60%;
     margin-left: 10px;
 }
 
-.container .answer .header,
-.container .answer .item .inner{
+.container_2 .answer .header,
+.container_2 .answer .item .inner{
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
-.container .answer .header div,
-.container .answer .item .inner div{
+.container_2 .answer .header div,
+.container_2 .answer .item .inner div{
     padding: 10px;
     border: 2px solid black;
 }
 
-.container .answer .item{
+.container_2 .answer .item{
     display: none;
     /* border: 2px solid red; */
 }
 
-.container .answer .item .inner{
+.container_2 .answer .item .inner{
     display: none;
 }
 
 /* DOCUMENTATION END */
 /* ========================== */
-/* CONTAINER END */
+/* container_2 END */
 /* MEDIA START */
 
 @media (max-width:1410px) {
-    .container{
+    .container_2{
         padding: 0px 50px;
     }
     #back{
@@ -102,7 +103,7 @@
 }
 
 @media (max-width:1012px) {
-    .container{
+    .container_2{
         padding: 0px 20px;
     }
     #back{
@@ -121,22 +122,22 @@
 }
 
 @media(max-width:740px){
-    .container{
+    .container_2{
         flex-wrap: wrap;
     }
-    .container .form,
-    .container .answer{
+    .container_2 .form,
+    .container_2 .answer{
         width: 100%;
         margin: 0px;
     }
 
-    .container #select{
+    .container_2 #select{
         margin: 0;
     }
 }
 
 @media(max-width: 401px){
-    .container #select{
+    .container_2 #select{
         margin-top: 10px;
     }
 }
@@ -147,11 +148,72 @@
 
     <!-- HEADER START -->
 
-    <header>
-        <h3>WELL SERVICES</h3>
+    <header id="header" class="container-fluid">
+        <div class="container py-2 d-flex align-items-center justify-content-between">
+            <h3 class="m-0">
+                Well Service
+            </h3>
+            <div class="wrapp">
+                <img id="menu_icon" src="../../img/menu.png" style="transform: scale(1);transition: all 0.5s;" width="25px" alt="op">
+                <img id="menu_icon_2" src="../../img/cross.png" style="transform: scale(0);transition: all 0.5s;" width="20px" alt="op">
+            </div>
+        </div>
     </header>
 
     <!-- HEADER END -->
+    <!-- SIDE NAV-BAR START -->
+
+    <section class="side_bar py-3">
+        <div class="row">
+            <!-- Home -->
+            <div class="col-12">
+                <a href="#" class="menu_link py-2 px-3 d-block text-decoration-none">
+                    <img src="../../img/home.png" width="25px" alt="Home_icon"><span class="ms-3">Home</span>
+                </a>
+            </div>
+            <!-- About -->
+            <div class="col-12">
+                <a href="#" class="menu_link py-2 px-3 d-block text-decoration-none">
+                    <img src="../../img/profile-user.png" width="25px" alt="About_icon"><span class="ms-3">About</span>
+                </a>
+            </div>
+            <!-- Services -->
+            <div class="col-12">
+                <div id="service_icon" class="menu_link py-2 px-3 d-block text-decoration-none">
+                    <img src="../../img/customer-service.png" width="25px" alt="Services_icon"><span class="ms-3">Services</span>
+                </div>
+                <!-- Drop-down-menu -->
+                <div class="drop_down row d-none">
+                    <!-- 1 -->
+                    <div class="col-12">
+                        <a href="#" class="menu_link py-2 ps-5 d-block text-decoration-none">
+                            <img src="../../img/search.png" width="25px" alt="search_icon"><span class="ms-3">Documentation</span>
+                        </a>
+                    </div>
+                    <!-- 2 -->
+                    <div class="col-12">
+                        <a href="#" class="menu_link py-2 ps-5 d-block text-decoration-none">
+                            <img src="../../img/search.png" width="25px" alt="search_icon"><span class="ms-3">Apply from US</span>
+                        </a>
+                    </div>
+                    <!-- 3 -->
+                    <div class="col-12">
+                        <a href="#" class="menu_link py-2 ps-5 d-block text-decoration-none">
+                            <img src="../../img/search.png" width="25px" alt="search_icon"><span class="ms-3">Self Apply</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact -->
+            <div class="col-12">
+                <a href="#" class="menu_link py-2 px-3 d-block text-decoration-none">
+                    <img src="../../img/call.png" width="25px" alt="Contact_icon"><span class="ms-3">Contact</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIDE NAV-BAR END -->
     <!-- BACK BUTTON START -->
 
     <a id="back" href="../html/index.html">Back</a>
@@ -159,7 +221,7 @@
     <!-- BACK BUTTON END -->
     <!-- CONTAINER START-->
 
-    <div class="container">
+    <div class="container_2">
         <!-- FORM START -->
         <div class="form">
             <div class="item">
@@ -183,28 +245,28 @@
                 <div style="display: flex;">
                     <input type="checkbox" id="new">
                     <label for="new">
-                        <p>&nbsp;&nbsp;New Application</p>
+                        <p class="p-0 m-0">&nbsp;&nbsp;New Application</p>
                     </label>
                 </div>
                 <br>
                 <div style="display: flex;">
                     <input type="checkbox" id="name">
                     <label for="name">
-                        <p>&nbsp;&nbsp;Name</p>
+                        <p class="p-0 m-0">&nbsp;&nbsp;Name</p>
                     </label>
                 </div>
                 <br>
                 <div style="display: flex;">
                     <input type="checkbox" id="father" disabled>
                     <label for="father">
-                        <p>&nbsp;&nbsp;Father Name / Mother Name</p>
+                        <p class="p-0 m-0">&nbsp;&nbsp;Father Name / Mother Name</p>
                     </label>
                 </div>
                 <br>
                 <div style="display: flex;">
                     <input type="checkbox" id="dob">
                     <label for="dob">
-                        <p>&nbsp;&nbsp;D.O.B / Issue Date</p>
+                        <p class="p-0 m-0">&nbsp;&nbsp;D.O.B / Issue Date</p>
                     </label>
                 </div>
             </div>
@@ -432,6 +494,7 @@
 
     <!-- CONTAINER END -->
     <script src="../jqurey/jquery-3.7.1.js"></script>
+    <script src="../js/code.js"></script>
     <script>
         
         var Newapply = document.getElementById("new");

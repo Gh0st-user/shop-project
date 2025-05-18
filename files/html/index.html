@@ -7,13 +7,6 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
     <style>
-
-/* HEADER START */
-        #header{
-            background-color: var(--black);
-            color: var(--white);
-        }
-/* HEADER END */
 /* CONTAINER START */
         #container a{
             color: var(--white);
@@ -21,36 +14,6 @@
             transition: all 0.3s;
         }
 /* CONTAINER END */
-/* SIDE-BAR START */
-        .side_bar{
-            background-color: var(--black);
-            position: fixed;
-            left: -280px;
-            width: 280px;
-            height: auto;
-            z-index: 100;
-            color: var(--white);
-            background-color: var(--black-2);
-            transition: all 0.3s;
-        }
-
-        .side_bar_toggle{
-            left: 0px;
-        }
-
-        .side_bar a{
-            color: var(--white);
-        }
-
-        .side_bar .menu_link{
-            transition: all 0.3s;
-        }
-
-        .side_bar .menu_link:focus-within{
-            background-color: var(--black);
-        }
-
-/* SIDE-BAR START */
     </style>
 </head>
 <body>
@@ -60,7 +23,10 @@
             <h3 class="m-0">
                 Well Service
             </h3>
-            <img id="menu_icon" src="../../img/menu.png" width="25px" alt="op">
+            <div class="wrapp">
+                <img id="menu_icon" src="../../img/menu.png" style="transform: scale(1);transition: all 0.5s;" width="25px" alt="op">
+                <img id="menu_icon_2" src="../../img/cross.png" style="transform: scale(0);transition: all 0.5s;" width="20px" alt="op">
+            </div>
         </div>
     </header>
     <!-- HEADER END -->
@@ -152,22 +118,6 @@
 
     <!-- CONTAINER END -->
 <script src="../jqurey/jquery-3.7.1.js"></script>
-<script>
-
-    $(document).ready(function(){
-        // FOR SIDE SIDE_BAR SCROLL
-        $("#menu_icon").click(function(){
-            $(".side_bar").toggleClass("side_bar_toggle")
-        })
-
-        // FOR DROPDOWN (SERVICES_MENU)
-        $("#service_icon").click(function(){
-            $(".drop_down").toggleClass("d-none")
-        })
-
-    });
-
-
-</script>
+<script src="../js/code.js"></script>
 </body>
 </html>

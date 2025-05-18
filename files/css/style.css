@@ -9,70 +9,78 @@
     --white: #fff;
     --light: #a1a0a0;
     --medium: #c4bebe;
-    --dark: #dedcdc;
+    --dark: #c8c7c7;
     --violate: blueviolet;
     --shadow: 0px 5px 5px rgba(99, 98, 98, 0.781);
 }
 
+body{
+    background-color: var(--medium);
+}
+
+.pop_btn{
+    box-shadow: 10px 10px 10px -1px var(--light), -10px -10px 10px -1px var(--dark);
+    border-radius: 10px;
+}
+
 /* HEADER START */
-        #header{
-            background-color: var(--black-2);
-            color: var(--white);
-        }
+#header h3{
+    /* background-color: var(--black-2); */
+    color: var(--violate);  
+}
 
-        #header .wrapp{
-            position: relative;
-            overflow: hidden;
-            width: 25px;
-            height: 25px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+#header .wrapp{
+    position: relative;
+    overflow: hidden;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        #header #menu_icon_2{
-            position: absolute;
-            top: 0px;
-            left: -25px;
-        }
+#header #menu_icon_2{
+    position: absolute;
+    top: 0px;
+    left: -25px;
+}
 
 /* HEADER END */
 /* SIDE-BAR START */
-        .side_bar{
-            background-color: var(--black);
-            position: fixed;
-            top: 0px;
-            left: -280px;
-            width: 280px;
-            height: 100vh;
-            z-index: 100;
-            color: var(--white);
-            background-color: var(--black-2);
-            transition: all 0.5s;
-            transform: scale(0);
-        }
+.side_bar{
+    position: fixed;
+    top: 0px;
+    left: -280px;
+    width: 280px;
+    height: 100vh;
+    z-index: 100;
+    color: var(--white);
+    background-color: var(--black-2);
+    transition: all 0.5s;
+    transform: scale(0);
+}
 
-        .side_bar_toggle{
-            left: 0px;
-            transform: scale(1);
-        }
+.side_bar_toggle{
+    left: 0px;
+    transform: scale(1);
+}
 
-        .side_bar a{
-            color: var(--white);
-        }
+.side_bar a{
+    color: var(--white);
+}
 
-        .side_bar .menu_link{
-            transition: all 0.3s;
-        }
+.side_bar .menu_link{
+    transition: all 0.3s;
+}
 
-        .side_bar .menu_link:focus-within{
-            background-color: var(--black);
-        }
+.side_bar .menu_link:focus-within{
+    background-color: var(--black);
+}
 
-        .side_bar .menu_link,
-        #header img{
-            cursor: pointer;
-        }
+.side_bar .menu_link,
+#header img{
+    cursor: pointer;
+}
 
 /* SIDE-BAR START */
 

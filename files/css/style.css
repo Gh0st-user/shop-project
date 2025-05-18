@@ -7,12 +7,16 @@
     --black: #313131;
     --black-2: #212121;
     --white: #fff;
+    --light: #a1a0a0;
+    --medium: #c4bebe;
+    --dark: #dedcdc;
+    --violate: blueviolet;
     --shadow: 0px 5px 5px rgba(99, 98, 98, 0.781);
 }
 
 /* HEADER START */
         #header{
-            background-color: var(--black);
+            background-color: var(--black-2);
             color: var(--white);
         }
 
@@ -37,9 +41,10 @@
         .side_bar{
             background-color: var(--black);
             position: fixed;
+            top: 0px;
             left: -280px;
             width: 280px;
-            height: auto;
+            height: 100vh;
             z-index: 100;
             color: var(--white);
             background-color: var(--black-2);

@@ -26,7 +26,7 @@
 /* BACK BUTTON END */
 /* CONTAINER START */
 
-.container{
+.container_2{
     width: 100%;
     padding: 0px 100px;
     display: flex;
@@ -36,12 +36,12 @@
 
 /* QUESTION START */
 
-.container .question{
+.container_2 .question{
     width: 30%;
     margin-right: 10px;
 }
 
-.container .question .item{
+.container_2 .question .item{
     padding: 10px;
     background-color: var(--black-2);
     color: var(--white);
@@ -59,12 +59,12 @@
 /* QUESTION END */
 /* ANSWER START */
 
-.container .answer{
+.container_2 .answer{
     width: 70%;
     margin-left: 10px;
 }
 
-.container .answer h3{
+.container_2 .answer h3{
     background-color: var(--black-2);
     color: var(--white);
     margin: 0px 0px 10px 0px; 
@@ -73,32 +73,32 @@
 }
 
 
-.container .answer .item,
-.container .answer .header{
+.container_2 .answer .item,
+.container_2 .answer .header{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 3fr;
 }
 
-.container .answer .item div,
-.container .answer .header div{
+.container_2 .answer .item div,
+.container_2 .answer .header div{
     padding: 10px;
     border: 2px solid var(--black-2);
 }
 
-.container .answer .item{
+.container_2 .answer .item{
     display: none;
 }
 
 /* ANSWER END */
-/* CONTAINER END */
+/* container_2 END */
 /* Media start */
 
 @media(max-width: 1100px){
     header{
         padding: 20px 50px;
     }
-    .container{
+    .container_2{
         padding: 0px 50px;
     }
 
@@ -114,17 +114,17 @@
     header{
         padding: 20px;
     }
-    .container{
+    .container_2{
         padding: 0px 20px;
         flex-wrap: wrap;
     }
 
-    .container .question{
+    .container_2 .question{
         width: 100%;
         margin: 0px;
     }
 
-    .container .answer{
+    .container_2 .answer{
         width: 100%;
         margin: 0px;
     }
@@ -209,7 +209,7 @@
 
     <!-- BACK-BTN-END -->
     <!-- CONTAINER START-->
-    <div class="container">
+    <div class="container_2">
         <!-- FORM START -->
         <div class="question">
             <div class="item" style="display: flex;justify-content: space-between;">

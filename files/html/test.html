@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --light: #a1a0a0;
+    --medium: #c4bebe;
+    --dark: #dedcdc;
+    --violate: blueviolet;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #c4bebe;
+}
+
+.div_1{
+    /* border: 2px solid red; */
+    /* box-shadow: inset 5px 5px 5px gray; */
+    border-radius: 10px;
+}
+
+.div_2{
+    box-shadow:  10px 10px 10px -1px #a1a0a0, -10px -10px 10px -1px #dedcdc;
+    border-radius: 100px;
+    padding: 15px 30px;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100%;
+    color: blueviolet;
+    font-weight: 900;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+</style>
+<body>
+    
+    <div class="div_1">
+        <div class="div_2">
+            Hello
+        </div>
+    </div>
+    
+</body>
+</html>

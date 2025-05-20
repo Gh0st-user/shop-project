@@ -49,18 +49,22 @@ body{
 /* SIDE-BAR START */
 .side_bar{
     position: fixed;
-    top: 0px;
+    top: -10vh;
+    /* bottom: 0px; */
     left: -280px;
     width: 280px;
     height: 100vh;
     z-index: 100;
     color: var(--white);
     background-color: var(--black-2);
+    border-radius: 100%;
     transition: all 0.5s;
     transform: scale(0);
 }
 
 .side_bar_toggle{
+    top: 0vh;
+    border-radius: 0px;
     left: 0px;
     transform: scale(1);
 }

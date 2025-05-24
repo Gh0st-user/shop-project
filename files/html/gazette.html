@@ -38,216 +38,149 @@ ul li{
 /* MEDIA END */
 </style>
 <body>
+<!-- BACK BUTTON START -->
 
-    <!-- HEADER START -->
-    <header id="header" class="pop_btn container-fluid">
-        <div class="container py-2 d-flex align-items-center justify-content-between">
-            <h3 class="m-0">
-                Well Service
-            </h3>
-            <div class="wrapp">
-                <img id="menu_icon" src="../../img/menu.png" style="transform: scale(1);transition: all 0.5s;" width="25px" alt="op">
-                <img id="menu_icon_2" src="../../img/cross.png" style="transform: scale(0);transition: all 0.5s;" width="20px" alt="op">
-            </div>
-        </div>
-    </header>
-    <!-- HEADER END -->
-    <!-- SIDE NAV-BAR START -->
+<div class="container p-0 mt-3">
+    <a id="back" class="text-decoration-none border d-inline-block m-0 px-3 py-2 rounded" href="../html/index.html">Back</a>
+</div>
 
-    <section class="side_bar py-3">
-        <div class="row">
-            <!-- Home -->
-            <div class="col-12">
-                <a href="#" class="menu_link py-2 px-3 d-block text-decoration-none">
-                    <img src="../../img/home.png" width="25px" alt="Home_icon"><span class="ms-3">Home</span>
-                </a>
-            </div>
-            <!-- About -->
-            <div class="col-12">
-                <a href="#" class="menu_link py-2 px-3 d-block text-decoration-none">
-                    <img src="../../img/profile-user.png" width="25px" alt="About_icon"><span class="ms-3">About</span>
-                </a>
-            </div>
-            <!-- Services -->
-            <div class="col-12">
-                <div id="service_icon" class="menu_link py-2 px-3 d-block text-decoration-none">
-                    <img src="../../img/customer-service.png" width="25px" alt="Services_icon"><span class="ms-3">Services</span>
+<!-- BACK BUTTON END -->
+<!-- CONTAINER START -->
+
+<div class="container my-4">
+    <div class="row justify-content-between">
+        <!-- Form Start -->
+        <div class="form col-md-5">
+            <form action="" class="row">
+                <div class="col-12 py-2 d-flex justify-content-between align-items-center border">
+                    <p class="m-0">
+                        Select State
+                    </p>
+                    <select name="" id="select" class="py-2 px-1">
+                        <option value="0">--Select State</option>
+                        <option value="1">Maharashtra</option>
+                        <option value="2">Other</option>
+                    </select>
                 </div>
-                <!-- Drop-down-menu -->
-                <div class="drop_down row d-none">
-                    <!-- 1 -->
-                    <div class="col-12">
-                        <a href="#" class="menu_link py-2 ps-5 d-block text-decoration-none">
-                            <img src="../../img/search.png" width="25px" alt="search_icon"><span class="ms-3">Documentation</span>
-                        </a>
-                    </div>
-                    <!-- 2 -->
-                    <div class="col-12">
-                        <a href="#" class="menu_link py-2 ps-5 d-block text-decoration-none">
-                            <img src="../../img/search.png" width="25px" alt="search_icon"><span class="ms-3">Apply from US</span>
-                        </a>
-                    </div>
-                    <!-- 3 -->
-                    <div class="col-12">
-                        <a href="#" class="menu_link py-2 ps-5 d-block text-decoration-none">
-                            <img src="../../img/search.png" width="25px" alt="search_icon"><span class="ms-3">Self Apply</span>
-                        </a>
+                <div class="col-12 py-2 border">
+                    <p>
+                        Select age :
+                    </p>
+                    <div class="d-flex align-items-center ju"> 
+                        <label class="border px-2" for="minor"><input disabled type="radio" id="minor" name="age">Minor</label>
+                        <label class="border px-2" for="major"><input disabled type="radio" id="major" name="age">Adult</label>
+                        <label class="border px-2" for="after-marriage"><input disabled type="radio" id="after-marriage" name="age">After Marriage</label>
                     </div>
                 </div>
-            </div>
-            <!-- Contact -->
-            <div class="col-12">
-                <a href="#" class="menu_link py-2 px-3 d-block text-decoration-none">
-                    <img src="../../img/call.png" width="25px" alt="Contact_icon"><span class="ms-3">Contact</span>
-                </a>
+                <div class="col-12 py-2 border">
+                    <input id="submit-btn" class="btn-basic px-3 py-2 rounded" type="button" value="Submit">
+                </div>
+            </form>
+        </div>
+        <!-- Form End -->
+        <!-- Answer Start -->
+        <div class="answer col-md-7">
+            <div class="row">
+                <div class="col-4 border p-3">Work</div>
+                <div class="col-8 border p-3">Documentation</div>
+                <!-- radio -1 -->
+                <div class="ans_1 row p-0 m-0">
+                    <div class="col-4 border p-3">Minor</div>
+                    <div class="col-8 border p-3">
+                        <div class="row">
+                            <div class="col">
+                                <ul>
+                                    <li class="p-3">Applicants one photo</li>
+                                    <li class="p-3">Applicant's and Gardian's AADHAAR</li>
+                                    <li class="p-3">Birth Certificate or Bonafide Certificate</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- radio -2 -->
+                <div class="ans_2 row p-0 m-0">
+                    <div class="col-4 border p-3">Adult</div>
+                    <div class="col-8 border p-3">
+                        <div class="row">
+                            <div class="col">
+                                <ul>
+                                    <li class="p-3">Applicants one photo</li>
+                                    <li class="p-3">Applicant's AADHAAR and Pan Card if exists</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- radio -3 -->
+                <div class="ans_3 row p-0 m-0">
+                    <div class="col-4 border p-3">After Marriage</div>
+                    <div class="col-8 border p-3">
+                        <div class="row">
+                            <div class="col">
+                                <ul>
+                                    <li class="p-3">Applicants one photo</li>
+                                    <li class="p-3">Applicants and Husband's AADHAAR</li>
+                                    <li class="p-3">Merriage Certificate ( Optional )</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-
-    <!-- SIDE NAV-BAR END -->
-    <!-- BACK BUTTON START -->
-
-    <div class="container p-0 mt-3">
-        <a id="back" class="text-decoration-none border d-inline-block m-0 px-3 py-2 rounded" href="../html/index.html">Back</a>
+        <!-- Answer Start -->
     </div>
+</div>
 
-    <!-- BACK BUTTON END -->
-    <!-- CONTAINER START -->
-    
-    <div class="container my-4">
-        <div class="row justify-content-between">
-            <!-- Form Start -->
-            <div class="form col-md-5">
-                <form action="" class="row">
-                    <div class="col-12 py-2 d-flex justify-content-between align-items-center border">
-                        <p class="m-0">
-                            Select State
-                        </p>
-                        <select name="" id="select" class="py-2 px-1">
-                            <option value="0">--Select State</option>
-                            <option value="1">Maharashtra</option>
-                            <option value="2">Other</option>
-                        </select>
-                    </div>
-                    <div class="col-12 py-2 border">
-                        <p>
-                            Select age :
-                        </p>
-                        <div class="d-flex align-items-center ju"> 
-                            <label class="border px-2" for="minor"><input disabled type="radio" id="minor" name="age">Minor</label>
-                            <label class="border px-2" for="major"><input disabled type="radio" id="major" name="age">Adult</label>
-                            <label class="border px-2" for="after-marriage"><input disabled type="radio" id="after-marriage" name="age">After Marriage</label>
-                        </div>
-                    </div>
-                    <div class="col-12 py-2 border">
-                        <input id="submit-btn" class="btn-basic px-3 py-2 rounded" type="button" value="Submit">
-                    </div>
-                </form>
-            </div>
-            <!-- Form End -->
-            <!-- Answer Start -->
-            <div class="answer col-md-7">
-                <div class="row">
-                    <div class="col-4 border p-3">Work</div>
-                    <div class="col-8 border p-3">Documentation</div>
-                    <!-- radio -1 -->
-                    <div class="ans_1 row p-0 m-0">
-                        <div class="col-4 border p-3">Minor</div>
-                        <div class="col-8 border p-3">
-                            <div class="row">
-                                <div class="col">
-                                    <ul>
-                                        <li class="p-3">Applicants one photo</li>
-                                        <li class="p-3">Applicant's and Gardian's AADHAAR</li>
-                                        <li class="p-3">Birth Certificate or Bonafide Certificate</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- radio -2 -->
-                    <div class="ans_2 row p-0 m-0">
-                        <div class="col-4 border p-3">Adult</div>
-                        <div class="col-8 border p-3">
-                            <div class="row">
-                                <div class="col">
-                                    <ul>
-                                        <li class="p-3">Applicants one photo</li>
-                                        <li class="p-3">Applicant's AADHAAR and Pan Card if exists</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- radio -3 -->
-                    <div class="ans_3 row p-0 m-0">
-                        <div class="col-4 border p-3">After Marriage</div>
-                        <div class="col-8 border p-3">
-                            <div class="row">
-                                <div class="col">
-                                    <ul>
-                                        <li class="p-3">Applicants one photo</li>
-                                        <li class="p-3">Applicants and Husband's AADHAAR</li>
-                                        <li class="p-3">Merriage Certificate ( Optional )</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Answer Start -->
-        </div>
-    </div>
-    
 
-    <!-- CONTAINER END -->
-    <script src="../jqurey/jquery-3.7.1.js"></script>
-    <script src="../js/code.js"></script>
-    <script>
+<!-- CONTAINER END -->
+<script src="../jqurey/jquery-3.7.1.js"></script>
+<script src="../js/code.js"></script>
+<script>
 
-        $(document).ready(function(){
-            // CONDITION FOR UNLOCK RADIO IPUTS
-            $('#select').on('change', function() {
-                selectedValue = $(this).val();    
-                if(this.value == "1"){
-                    $("#minor").removeAttr("disabled");
-                    $("#major").removeAttr("disabled");
-                    $("#after-marriage").removeAttr("disabled");
-                }
-                else{
-                    $("#minor").attr("disabled", "true");
-                    $("#major").attr("disabled", "true");
-                    $("#after-marriage").attr("disabled", "true");
-                }
-            });
-            // 
-            $("#submit-btn").click(function(){
-                var minor = document.getElementById("minor");
-                var major = document.getElementById("major");
-                var after_marriage = document.getElementById("after-marriage");
-                if(minor.checked == true){
-                    $(".ans_1").css("display","flex");
-                    $(".ans_2").css("display","none");
-                    $(".ans_3").css("display","none");
-                }
-                else if(major.checked == true){
-                    $(".ans_2").css("display","flex");
-                    $(".ans_1").css("display","none");
-                    $(".ans_3").css("display","none");
-                }
-                else if(after_marriage.checked == true){
-                    $(".ans_3").css("display","flex");
-                    $(".ans_1").css("display","none");
-                    $(".ans_2").css("display","none");
-                }
-                else{
-                    alert("not found")
-                }
-            });
+    $(document).ready(function(){
+        // CONDITION FOR UNLOCK RADIO IPUTS
+        $('#select').on('change', function() {
+            selectedValue = $(this).val();    
+            if(this.value == "1"){
+                $("#minor").removeAttr("disabled");
+                $("#major").removeAttr("disabled");
+                $("#after-marriage").removeAttr("disabled");
+            }
+            else{
+                $("#minor").attr("disabled", "true");
+                $("#major").attr("disabled", "true");
+                $("#after-marriage").attr("disabled", "true");
+            }
         });
+        // 
+        $("#submit-btn").click(function(){
+            var minor = document.getElementById("minor");
+            var major = document.getElementById("major");
+            var after_marriage = document.getElementById("after-marriage");
+            if(minor.checked == true){
+                $(".ans_1").css("display","flex");
+                $(".ans_2").css("display","none");
+                $(".ans_3").css("display","none");
+            }
+            else if(major.checked == true){
+                $(".ans_2").css("display","flex");
+                $(".ans_1").css("display","none");
+                $(".ans_3").css("display","none");
+            }
+            else if(after_marriage.checked == true){
+                $(".ans_3").css("display","flex");
+                $(".ans_1").css("display","none");
+                $(".ans_2").css("display","none");
+            }
+            else{
+                alert("not found")
+            }
+        });
+    });
 
-    </script>
+</script>
 </body>
 
 </html>

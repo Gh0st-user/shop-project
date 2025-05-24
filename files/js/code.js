@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    // FOR SIDE SIDE_BAR SCROLL
+
+    // FOR SIDE_BAR SCROLL
     $("#menu_icon").click(function(){
         $(".side_bar").toggleClass("side_bar_toggle");
         $("#menu_icon_2").css("transform", "scale(1)");

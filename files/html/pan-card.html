@@ -145,461 +145,405 @@
 /* MEDIA END */
 </style>
 <body>
+<!-- BACK BUTTON START -->
 
-    <!-- HEADER START -->
+<a id="back" href="../html/index.html">Back</a>
 
-    <header id="header" class="pop_btn container-fluid">
-        <div class="container py-2 d-flex align-items-center justify-content-between">
-            <h3 class="m-0">
-                Well Service
-            </h3>
-            <div class="wrapp">
-                <img id="menu_icon" src="../../img/menu.png" style="transform: scale(1);transition: all 0.5s;" width="25px" alt="op">
-                <img id="menu_icon_2" src="../../img/cross.png" style="transform: scale(0);transition: all 0.5s;" width="20px" alt="op">
+<!-- BACK BUTTON END -->
+<!-- CONTAINER START-->
+
+<div class="container_2">
+    <!-- FORM START -->
+    <div class="form">
+        <div class="item">
+            <label for="select" style="font-weight: 900;">Select Type : </label>
+            <select id="select">
+                <option value="--SELECT TYPE--" selected>--Select Type--</option>
+                <option id="op-1" value="0" >INDIVIDUAL</option>
+                <option id="op-2" value="1">ASSOCIATION OF PERSONS</option>
+                <option id="op-3" value="2">BODY OF INDIVIDUAL</option>
+                <option id="op-4" value="3">COMPANY</option>
+                <option id="op-5" value="4">TRUST</option>
+                <option id="op-6" value="5">LIMITED LIABILITY PARTNERSHIP</option>
+                <option id="op-7" value="6">FIRM</option>
+                <option id="op-8" value="7">GOVERNMENT</option>
+                <option id="op-9" value="8">HINDU UNDIVIDED FAMILY</option>
+                <option id="op-10" value="9">ARTIFICIAL JURIDICAL PERSON</option>
+                <option id="op-11" value="10">LOCAL AUTHORITY</option>
+            </select>
+        </div>
+        <div class="item">
+            <div style="display: flex;">
+                <input type="checkbox" id="new">
+                <label for="new">
+                    <p class="p-0 m-0">&nbsp;&nbsp;New Application</p>
+                </label>
+            </div>
+            <br>
+            <div style="display: flex;">
+                <input type="checkbox" id="name">
+                <label for="name">
+                    <p class="p-0 m-0">&nbsp;&nbsp;Name</p>
+                </label>
+            </div>
+            <br>
+            <div style="display: flex;">
+                <input type="checkbox" id="father" disabled>
+                <label for="father">
+                    <p class="p-0 m-0">&nbsp;&nbsp;Father Name / Mother Name</p>
+                </label>
+            </div>
+            <br>
+            <div style="display: flex;">
+                <input type="checkbox" id="dob">
+                <label for="dob">
+                    <p class="p-0 m-0">&nbsp;&nbsp;D.O.B / Issue Date</p>
+                </label>
             </div>
         </div>
-    </header>
-
-    <!-- HEADER END -->
-    <!-- SIDE NAV-BAR START -->
-
-    <section class="side_bar py-3">
-        <div class="row">
-            <!-- Home -->
-            <div class="col-12">
-                <a href="#" class="menu_link py-2 px-3 d-block text-decoration-none">
-                    <img src="../../img/home.png" width="25px" alt="Home_icon"><span class="ms-3">Home</span>
-                </a>
-            </div>
-            <!-- About -->
-            <div class="col-12">
-                <a href="#" class="menu_link py-2 px-3 d-block text-decoration-none">
-                    <img src="../../img/profile-user.png" width="25px" alt="About_icon"><span class="ms-3">About</span>
-                </a>
-            </div>
-            <!-- Services -->
-            <div class="col-12">
-                <div id="service_icon" class="menu_link py-2 px-3 d-block text-decoration-none">
-                    <img src="../../img/customer-service.png" width="25px" alt="Services_icon"><span class="ms-3">Services</span>
-                </div>
-                <!-- Drop-down-menu -->
-                <div class="drop_down row d-none">
-                    <!-- 1 -->
-                    <div class="col-12">
-                        <a href="#" class="menu_link py-2 ps-5 d-block text-decoration-none">
-                            <img src="../../img/search.png" width="25px" alt="search_icon"><span class="ms-3">Documentation</span>
-                        </a>
-                    </div>
-                    <!-- 2 -->
-                    <div class="col-12">
-                        <a href="#" class="menu_link py-2 ps-5 d-block text-decoration-none">
-                            <img src="../../img/search.png" width="25px" alt="search_icon"><span class="ms-3">Apply from US</span>
-                        </a>
-                    </div>
-                    <!-- 3 -->
-                    <div class="col-12">
-                        <a href="#" class="menu_link py-2 ps-5 d-block text-decoration-none">
-                            <img src="../../img/search.png" width="25px" alt="search_icon"><span class="ms-3">Self Apply</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- Contact -->
-            <div class="col-12">
-                <a href="#" class="menu_link py-2 px-3 d-block text-decoration-none">
-                    <img src="../../img/call.png" width="25px" alt="Contact_icon"><span class="ms-3">Contact</span>
-                </a>
-            </div>
+        <!-- SUBMIT BUTTON START -->
+        <div class="item">
+            <input id="submit-btn" style="padding: 10px 15px;font-weight: 900;border: none;cursor: pointer;" type="submit"
+            value="Submit">
         </div>
-    </section>
-
-    <!-- SIDE NAV-BAR END -->
-    <!-- BACK BUTTON START -->
-
-    <a id="back" href="../html/index.html">Back</a>
-
-    <!-- BACK BUTTON END -->
-    <!-- CONTAINER START-->
-
-    <div class="container_2">
-        <!-- FORM START -->
-        <div class="form">
-            <div class="item">
-                <label for="select" style="font-weight: 900;">Select Type : </label>
-                <select id="select">
-                    <option value="--SELECT TYPE--" selected>--Select Type--</option>
-                    <option id="op-1" value="0" >INDIVIDUAL</option>
-                    <option id="op-2" value="1">ASSOCIATION OF PERSONS</option>
-                    <option id="op-3" value="2">BODY OF INDIVIDUAL</option>
-                    <option id="op-4" value="3">COMPANY</option>
-                    <option id="op-5" value="4">TRUST</option>
-                    <option id="op-6" value="5">LIMITED LIABILITY PARTNERSHIP</option>
-                    <option id="op-7" value="6">FIRM</option>
-                    <option id="op-8" value="7">GOVERNMENT</option>
-                    <option id="op-9" value="8">HINDU UNDIVIDED FAMILY</option>
-                    <option id="op-10" value="9">ARTIFICIAL JURIDICAL PERSON</option>
-                    <option id="op-11" value="10">LOCAL AUTHORITY</option>
-                </select>
-            </div>
-            <div class="item">
-                <div style="display: flex;">
-                    <input type="checkbox" id="new">
-                    <label for="new">
-                        <p class="p-0 m-0">&nbsp;&nbsp;New Application</p>
-                    </label>
-                </div>
-                <br>
-                <div style="display: flex;">
-                    <input type="checkbox" id="name">
-                    <label for="name">
-                        <p class="p-0 m-0">&nbsp;&nbsp;Name</p>
-                    </label>
-                </div>
-                <br>
-                <div style="display: flex;">
-                    <input type="checkbox" id="father" disabled>
-                    <label for="father">
-                        <p class="p-0 m-0">&nbsp;&nbsp;Father Name / Mother Name</p>
-                    </label>
-                </div>
-                <br>
-                <div style="display: flex;">
-                    <input type="checkbox" id="dob">
-                    <label for="dob">
-                        <p class="p-0 m-0">&nbsp;&nbsp;D.O.B / Issue Date</p>
-                    </label>
-                </div>
-            </div>
-            <!-- SUBMIT BUTTON START -->
-            <div class="item">
-                <input id="submit-btn" style="padding: 10px 15px;font-weight: 900;border: none;cursor: pointer;" type="submit"
-                value="Submit">
-            </div>
-            <!-- SUBMIT BUTTON END -->
-        </div>
-        <!-- FORM END -->
-        <!-- DOCUMENTATION START -->
-        <div class="answer">
-            <!-- HEADER -->
-            <div class="header">
-                <div>WORK</div>
-                <div>REQUIREMENTS</div>
-            </div>
-            <!-- INDIVIDUAL (1)-->
-            <div class="individual item">
-                <!-- NEW APPLY -->
-                <div class="new-inner inner">
-                    <div class="work">NEW APPLY</div>
-                    <div class="requirements">1</div>
-                </div>
-                <!-- NAME -->
-                <div class="name-inner inner">
-                    <div class="work">NAME</div>
-                    <div class="requirements">1</div>
-                </div>
-                <!-- FATHER -->
-                <div class="father-inner inner">
-                    <div class="work">FATHER</div>
-                    <div class="requirements">1</div>
-                </div>
-                <!-- DOB -->
-                <div class="dob-inner inner">
-                    <div class="work">DOB</div>
-                    <div class="requirements">1</div>
-                </div>
-            </div>
-            <!-- ASSOCIATION OF PERSON (2) -->
-            <div class="assosiation item">
-                <!-- NEW APPLY -->
-                <div class="new-inner inner">
-                    <div class="work">NEW APPLY</div>
-                    <div class="requirements">2</div>
-                </div>
-                <!-- NAME -->
-                <div class="name-inner inner">
-                    <div class="work">NAME</div>
-                    <div class="requirements">2</div>
-                </div>
-                <!-- DOB -->
-                <div class="dob-inner inner">
-                    <div class="work">DOB</div>
-                    <div class="requirements">2</div>
-                </div>
-            </div>
-            <!-- BODY OF INDIVIDUAL (3) -->
-            <div class="body item">
-                <!-- NEW APPLY -->
-                <div class="new-inner inner">
-                    <div class="work">NEW APPLY</div>
-                    <div class="requirements">3</div>
-                </div>
-                <!-- NAME -->
-                <div class="name-inner inner">
-                    <div class="work">NAME</div>
-                    <div class="requirements">3</div>
-                </div>
-                <!-- DOB -->
-                <div class="dob-inner inner">
-                    <div class="work">DOB</div>
-                    <div class="requirements">3</div>
-                </div>
-            </div>
-            <!-- COMPANY (4)-->
-            <div class="company item">
-                <!-- NEW APPLY -->
-                <div class="new-inner inner">
-                    <div class="work">NEW APPLY</div>
-                    <div class="requirements">4</div>
-                </div>
-                <!-- NAME -->
-                <div class="name-inner inner">
-                    <div class="work">NAME</div>
-                    <div class="requirements">4</div>
-                </div>
-                <!-- DOB -->
-                <div class="dob-inner inner">
-                    <div class="work">DOB</div>
-                    <div class="requirements">4</div>
-                </div>
-            </div>
-            <!-- TRUST (5)-->
-            <div class="trust item">
-                <!-- NEW APPLY -->
-                <div class="new-inner inner">
-                    <div class="work">NEW APPLY</div>
-                    <div class="requirements">5</div>
-                </div>
-                <!-- NAME -->
-                <div class="name-inner inner">
-                    <div class="work">NAME</div>
-                    <div class="requirements">5</div>
-                </div>
-                <!-- DOB -->
-                <div class="dob-inner inner">
-                    <div class="work">DOB</div>
-                    <div class="requirements">5</div>
-                </div>
-            </div>
-            <!-- LLP (6)-->
-            <div class="llp item">
-                <!-- NEW APPLY -->
-                <div class="new-inner inner">
-                    <div class="work">NEW APPLY</div>
-                    <div class="requirements">6</div>
-                </div>
-                <!-- NAME -->
-                <div class="name-inner inner">
-                    <div class="work">NAME</div>
-                    <div class="requirements">6</div>
-                </div>
-                <!-- DOB -->
-                <div class="dob-inner inner">
-                    <div class="work">DOB</div>
-                    <div class="requirements">6</div>
-                </div>
-            </div>
-            <!-- FIRM (7)-->
-            <div class="firm item">
-                <!-- NEW APPLY -->
-                <div class="new-inner inner">
-                    <div class="work">NEW APPLY</div>
-                    <div class="requirements">7</div>
-                </div>
-                <!-- NAME -->
-                <div class="name-inner inner">
-                    <div class="work">NAME</div>
-                    <div class="requirements">7</div>
-                </div>
-                <!-- DOB -->
-                <div class="dob-inner inner">
-                    <div class="work">DOB</div>
-                    <div class="requirements">7</div>
-                </div>
-            </div>
-            <!-- GOVERNMENT (8)-->
-            <div class="gov item">
-                <!-- NEW APPLY -->
-                <div class="new-inner inner">
-                    <div class="work">NEW APPLY</div>
-                    <div class="requirements">8</div>
-                </div>
-                <!-- NAME -->
-                <div class="name-inner inner">
-                    <div class="work">NAME</div>
-                    <div class="requirements">8</div>
-                </div>
-                <!-- DOB -->
-                <div class="dob-inner inner">
-                    <div class="work">DOB</div>
-                    <div class="requirements">8</div>
-                </div>
-            </div>
-            <!-- HUF (9)-->
-            <div class="huf item">
-                <!-- NEW APPLY -->
-                <div class="new-inner inner">
-                    <div class="work">NEW APPLY</div>
-                    <div class="requirements">9</div>
-                </div>
-                <!-- NAME -->
-                <div class="name-inner inner">
-                    <div class="work">NAME</div>
-                    <div class="requirements">9</div>
-                </div>
-                <!-- DOB -->
-                <div class="dob-inner inner">
-                    <div class="work">DOB</div>
-                    <div class="requirements">9</div>
-                </div>
-            </div>
-            <!-- AJP (10)-->
-            <div class="ajp item">
-                <!-- NEW APPLY -->
-                <div class="new-inner inner">
-                    <div class="work">NEW APPLY</div>
-                    <div class="requirements">10</div>
-                </div>
-                <!-- NAME -->
-                <div class="name-inner inner">
-                    <div class="work">NAME</div>
-                    <div class="requirements">10</div>
-                </div>
-                <!-- DOB -->
-                <div class="dob-inner inner">
-                    <div class="work">DOB</div>
-                    <div class="requirements">10</div>
-                </div>
-            </div>
-            <!-- LOCAL AUTHORITY (11)-->
-            <div class="local item">
-                <!-- NEW APPLY -->
-                <div class="new-inner inner">
-                    <div class="work">NEW APPLY</div>
-                    <div class="requirements">11</div>
-                </div>
-                <!-- NAME -->
-                <div class="name-inner inner">
-                    <div class="work">NAME</div>
-                    <div class="requirements">11</div>
-                </div>
-                <!-- DOB -->
-                <div class="dob-inner inner">
-                    <div class="work">DOB</div>
-                    <div class="requirements">11</div>
-                </div>
-            </div>
-        </div>
-        <!-- DOCUMENTATION END -->
+        <!-- SUBMIT BUTTON END -->
     </div>
+    <!-- FORM END -->
+    <!-- DOCUMENTATION START -->
+    <div class="answer">
+        <!-- HEADER -->
+        <div class="header">
+            <div>WORK</div>
+            <div>REQUIREMENTS</div>
+        </div>
+        <!-- INDIVIDUAL (1)-->
+        <div class="individual item">
+            <!-- NEW APPLY -->
+            <div class="new-inner inner">
+                <div class="work">NEW APPLY</div>
+                <div class="requirements">1</div>
+            </div>
+            <!-- NAME -->
+            <div class="name-inner inner">
+                <div class="work">NAME</div>
+                <div class="requirements">1</div>
+            </div>
+            <!-- FATHER -->
+            <div class="father-inner inner">
+                <div class="work">FATHER</div>
+                <div class="requirements">1</div>
+            </div>
+            <!-- DOB -->
+            <div class="dob-inner inner">
+                <div class="work">DOB</div>
+                <div class="requirements">1</div>
+            </div>
+        </div>
+        <!-- ASSOCIATION OF PERSON (2) -->
+        <div class="assosiation item">
+            <!-- NEW APPLY -->
+            <div class="new-inner inner">
+                <div class="work">NEW APPLY</div>
+                <div class="requirements">2</div>
+            </div>
+            <!-- NAME -->
+            <div class="name-inner inner">
+                <div class="work">NAME</div>
+                <div class="requirements">2</div>
+            </div>
+            <!-- DOB -->
+            <div class="dob-inner inner">
+                <div class="work">DOB</div>
+                <div class="requirements">2</div>
+            </div>
+        </div>
+        <!-- BODY OF INDIVIDUAL (3) -->
+        <div class="body item">
+            <!-- NEW APPLY -->
+            <div class="new-inner inner">
+                <div class="work">NEW APPLY</div>
+                <div class="requirements">3</div>
+            </div>
+            <!-- NAME -->
+            <div class="name-inner inner">
+                <div class="work">NAME</div>
+                <div class="requirements">3</div>
+            </div>
+            <!-- DOB -->
+            <div class="dob-inner inner">
+                <div class="work">DOB</div>
+                <div class="requirements">3</div>
+            </div>
+        </div>
+        <!-- COMPANY (4)-->
+        <div class="company item">
+            <!-- NEW APPLY -->
+            <div class="new-inner inner">
+                <div class="work">NEW APPLY</div>
+                <div class="requirements">4</div>
+            </div>
+            <!-- NAME -->
+            <div class="name-inner inner">
+                <div class="work">NAME</div>
+                <div class="requirements">4</div>
+            </div>
+            <!-- DOB -->
+            <div class="dob-inner inner">
+                <div class="work">DOB</div>
+                <div class="requirements">4</div>
+            </div>
+        </div>
+        <!-- TRUST (5)-->
+        <div class="trust item">
+            <!-- NEW APPLY -->
+            <div class="new-inner inner">
+                <div class="work">NEW APPLY</div>
+                <div class="requirements">5</div>
+            </div>
+            <!-- NAME -->
+            <div class="name-inner inner">
+                <div class="work">NAME</div>
+                <div class="requirements">5</div>
+            </div>
+            <!-- DOB -->
+            <div class="dob-inner inner">
+                <div class="work">DOB</div>
+                <div class="requirements">5</div>
+            </div>
+        </div>
+        <!-- LLP (6)-->
+        <div class="llp item">
+            <!-- NEW APPLY -->
+            <div class="new-inner inner">
+                <div class="work">NEW APPLY</div>
+                <div class="requirements">6</div>
+            </div>
+            <!-- NAME -->
+            <div class="name-inner inner">
+                <div class="work">NAME</div>
+                <div class="requirements">6</div>
+            </div>
+            <!-- DOB -->
+            <div class="dob-inner inner">
+                <div class="work">DOB</div>
+                <div class="requirements">6</div>
+            </div>
+        </div>
+        <!-- FIRM (7)-->
+        <div class="firm item">
+            <!-- NEW APPLY -->
+            <div class="new-inner inner">
+                <div class="work">NEW APPLY</div>
+                <div class="requirements">7</div>
+            </div>
+            <!-- NAME -->
+            <div class="name-inner inner">
+                <div class="work">NAME</div>
+                <div class="requirements">7</div>
+            </div>
+            <!-- DOB -->
+            <div class="dob-inner inner">
+                <div class="work">DOB</div>
+                <div class="requirements">7</div>
+            </div>
+        </div>
+        <!-- GOVERNMENT (8)-->
+        <div class="gov item">
+            <!-- NEW APPLY -->
+            <div class="new-inner inner">
+                <div class="work">NEW APPLY</div>
+                <div class="requirements">8</div>
+            </div>
+            <!-- NAME -->
+            <div class="name-inner inner">
+                <div class="work">NAME</div>
+                <div class="requirements">8</div>
+            </div>
+            <!-- DOB -->
+            <div class="dob-inner inner">
+                <div class="work">DOB</div>
+                <div class="requirements">8</div>
+            </div>
+        </div>
+        <!-- HUF (9)-->
+        <div class="huf item">
+            <!-- NEW APPLY -->
+            <div class="new-inner inner">
+                <div class="work">NEW APPLY</div>
+                <div class="requirements">9</div>
+            </div>
+            <!-- NAME -->
+            <div class="name-inner inner">
+                <div class="work">NAME</div>
+                <div class="requirements">9</div>
+            </div>
+            <!-- DOB -->
+            <div class="dob-inner inner">
+                <div class="work">DOB</div>
+                <div class="requirements">9</div>
+            </div>
+        </div>
+        <!-- AJP (10)-->
+        <div class="ajp item">
+            <!-- NEW APPLY -->
+            <div class="new-inner inner">
+                <div class="work">NEW APPLY</div>
+                <div class="requirements">10</div>
+            </div>
+            <!-- NAME -->
+            <div class="name-inner inner">
+                <div class="work">NAME</div>
+                <div class="requirements">10</div>
+            </div>
+            <!-- DOB -->
+            <div class="dob-inner inner">
+                <div class="work">DOB</div>
+                <div class="requirements">10</div>
+            </div>
+        </div>
+        <!-- LOCAL AUTHORITY (11)-->
+        <div class="local item">
+            <!-- NEW APPLY -->
+            <div class="new-inner inner">
+                <div class="work">NEW APPLY</div>
+                <div class="requirements">11</div>
+            </div>
+            <!-- NAME -->
+            <div class="name-inner inner">
+                <div class="work">NAME</div>
+                <div class="requirements">11</div>
+            </div>
+            <!-- DOB -->
+            <div class="dob-inner inner">
+                <div class="work">DOB</div>
+                <div class="requirements">11</div>
+            </div>
+        </div>
+    </div>
+    <!-- DOCUMENTATION END -->
+</div>
 
-    <!-- CONTAINER END -->
-    <script src="../jqurey/jquery-3.7.1.js"></script>
-    <script src="../js/code.js"></script>
-    <script>
-        
-        var Newapply = document.getElementById("new");
-        var Name = document.getElementById("name");
-        var Father = document.getElementById("father");
-        var Dob = document.getElementById("dob");
+<!-- CONTAINER END -->
+<!-- APPLY START -->
+<section class="apply container-fluid mt-4">
+        <div class="container border p-0">
+        <div class="row">
+            <div class="col-5">
+                <a href="#" class="btn-primary btn d-inline-block px-3 py-2">Apply</a>
+                <a href="#" class="btn-primary btn d-inline-block px-3 py-2">Apply</a>
+                <a href="#" class="btn-primary btn d-inline-block px-3 py-2">Apply</a>
+            </div>
+        </div>
+        </div>
+</section>
+<!-- APPLY END -->
+<script src="../jqurey/jquery-3.7.1.js"></script>
+<script src="../js/code.js"></script>
+<script>
+    
+    var Newapply = document.getElementById("new");
+    var Name = document.getElementById("name");
+    var Father = document.getElementById("father");
+    var Dob = document.getElementById("dob");
 
 
-        $(document).ready(function(){
-            // CONDITION FOR FATHER INPUT BUTTON
+    $(document).ready(function(){
+        // CONDITION FOR FATHER INPUT BUTTON
 
-            $('#select').on('change', function() {
-                selectedValue = $(this).val();    
-                if(this.value == "0"){
-                    $("#father").removeAttr("disabled");
-                }
-                else{
-                    $("#father").attr("disabled", "true");
-                }
-            });
-            // CONDITION FOR SUBMIT BUTTON
-
-            $("#submit-btn").click(function(){
-                // SELECT ARRY
-
-                var select_arry = [false, false, false, false, false, false, false, false, false, false, false];
-                // INNER ARRY
-
-                var inner_arry = [false, false, false, false]
-                // DICT FOR 1,2,3,4,5,6,7,8,9,10,11
-                
-                var select_dict = {
-                    0 : "individual",
-                    1 : "assosiation",
-                    2 : "body",
-                    3 : "company",
-                    4 : "trust",
-                    5 : "llp",
-                    6 : "firm",
-                    7 : "gov",
-                    8 : "huf",
-                    9 : "ajp",
-                    10 : "local",
-                };
-                // DICT FOR NEW APPLY, NAME, FATHER, DOB
-
-                var inner_dict = {
-                    0 : "new-inner",
-                    1 : "name-inner",
-                    2 : "father-inner", 
-                    3 : "dob-inner"
-                }
-                
-                // CHECK UNCHECK SUB INPUTS OF SELECT
-                if(Newapply.checked){
-                    inner_arry[0] = true
-                }
-                if(Newapply.checked == false){
-                    inner_arry[0] = false;
-                }
-                if(Name.checked){
-                    inner_arry[1] = true
-                }
-                if(Name.checked == false){
-                    inner_arry[1] = false;
-                }
-                if(Father.checked){
-                    inner_arry[2] = true
-                }
-                if(Father.checked == false){
-                    inner_arry[2] = false;
-                }
-                if(Dob.checked){
-                    inner_arry[3] = true
-                }
-                if(Dob.checked == false){
-                    inner_arry[3] = false;
-                }
-
-                // 
-                var for_select_arry = parseInt(selectedValue);
-                select_arry[for_select_arry] = true; 
-
-
-                for(var i = 0; i <= 10; i++){
-                    if(select_arry[i] == true){
-                        $("." + select_dict[i]).css("display", "block")
-                        for(var j = 0; j <= 3; j++){
-                            if(inner_arry[j] == true){
-                                $("." + inner_dict[j]).css("display", "grid")
-                            }
-                            if(inner_arry[j] == false){
-                                $("." + inner_dict[j]).css("display", "none")
-                            }
-                            
-                        }
-                    }
-                    if(select_arry[i] == false){
-                        $("." + select_dict[i]).css("display", "none")
-                    }
-                }
-            });
+        $('#select').on('change', function() {
+            selectedValue = $(this).val();    
+            if(this.value == "0"){
+                $("#father").removeAttr("disabled");
+            }
+            else{
+                $("#father").attr("disabled", "true");
+            }
         });
+        // CONDITION FOR SUBMIT BUTTON
 
-    </script>
+        $("#submit-btn").click(function(){
+            // SELECT ARRY
+
+            var select_arry = [false, false, false, false, false, false, false, false, false, false, false];
+            // INNER ARRY
+
+            var inner_arry = [false, false, false, false]
+            // DICT FOR 1,2,3,4,5,6,7,8,9,10,11
+            
+            var select_dict = {
+                0 : "individual",
+                1 : "assosiation",
+                2 : "body",
+                3 : "company",
+                4 : "trust",
+                5 : "llp",
+                6 : "firm",
+                7 : "gov",
+                8 : "huf",
+                9 : "ajp",
+                10 : "local",
+            };
+            // DICT FOR NEW APPLY, NAME, FATHER, DOB
+
+            var inner_dict = {
+                0 : "new-inner",
+                1 : "name-inner",
+                2 : "father-inner", 
+                3 : "dob-inner"
+            }
+            
+            // CHECK UNCHECK SUB INPUTS OF SELECT
+            if(Newapply.checked){
+                inner_arry[0] = true
+            }
+            if(Newapply.checked == false){
+                inner_arry[0] = false;
+            }
+            if(Name.checked){
+                inner_arry[1] = true
+            }
+            if(Name.checked == false){
+                inner_arry[1] = false;
+            }
+            if(Father.checked){
+                inner_arry[2] = true
+            }
+            if(Father.checked == false){
+                inner_arry[2] = false;
+            }
+            if(Dob.checked){
+                inner_arry[3] = true
+            }
+            if(Dob.checked == false){
+                inner_arry[3] = false;
+            }
+
+            // 
+            var for_select_arry = parseInt(selectedValue);
+            select_arry[for_select_arry] = true; 
+
+
+            for(var i = 0; i <= 10; i++){
+                if(select_arry[i] == true){
+                    $("." + select_dict[i]).css("display", "block")
+                    for(var j = 0; j <= 3; j++){
+                        if(inner_arry[j] == true){
+                            $("." + inner_dict[j]).css("display", "grid")
+                        }
+                        if(inner_arry[j] == false){
+                            $("." + inner_dict[j]).css("display", "none")
+                        }
+                        
+                    }
+                }
+                if(select_arry[i] == false){
+                    $("." + select_dict[i]).css("display", "none")
+                }
+            }
+        });
+    });
+
+</script>
 </body>
 
 </html>
